@@ -131,7 +131,38 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
-
+.header{
+  position:fixed;
+  width: 100%;
+  inset: 0;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+  transition:box-shadow .4s;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+  padding-inline: 1.5rem;
+}
+.navLogo{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .25rem;
+  font-family: var(--second-font);
+  color: var(--title-color);
+}
+.navLogo img{
+  width:24px;
+}
+.navClose,
+.navToggle{
+  display: flex;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
 
 /* Navigation for mobile devices */
 
