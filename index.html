@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
 
       <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="">
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
@@ -59,22 +59,122 @@
       <main class="main">
          <!--==================== HOME ====================-->
          <section class="home section" id="home">
-            
+            <div class="homeContainer container grid">
+               <div class="homeContent grid">
+                  <h2 class="homeTitle">Crispy And <br> Delicious Pizzas</h1>
+                  <p class="homeDecription">Order the best pizzas to end your hunger 
+                     and make your family moments more 
+                     memorable, place your order now.</p>
+                  <a href="#" class="button"><button>Order Pizza Now</button></a>
+                  <img src="assets/img/sticker-pizza.svg" alt="image" class="homeSticker1">
+                  <img src="assets/img/sticker-leaf.svg" alt="image" class="homeSticker2">
+               </div>
+               <div class="homeImage">
+                  <img src="assets/img/home-pizza.png" alt="pizza" class="homePizza">
+                  <img src="assets/img/home-board.png" alt="board" class="homeBoard">
+
+                  <img src="assets/img/home-leaf-1.png" alt="leaf" class="homeIngredient homeLeaf1">
+                  <img src="assets/img/home-leaf-2.png" alt="leaf" class="homeIngredient homeLeaf2">
+                  <img src="assets/img/home-olive.png" alt="olive" class="homeIngredient homeOlive">
+                  <img src="assets/img/home-mushroom.png" alt="mushroom" class="homeIngredient homeMushroom">
+                  <img src="assets/img/home-pepperoni.png" alt="pepperoni" class="homeIngredient homePepperoni">
+                  <img src="assets/img/home-tomato.png" alt="tomato" class="homeIngredient homeTomato">
+
+               </div>
+
+            </div>
          </section>
 
          <!--==================== ABOUT ====================-->
          <section class="about section" id="about">
-            
+            <div class="aboutContainer container grid">
+               <div class="aboutData">
+                  <h2 class="sectionTitle aboutTitle">Learn More About <br> Our History</h2>
+                  <p class="aboutDescription">The secret to success is the best ingredients 
+                  to make a better pizza. Today we strive for 
+                  perfection, just as we have been doing for 15 years 
+                  when we first opened the pizzeria in Lima - Peru.</p>
+                 
+                  <a href="#" class="button"><button>Order Pizza Now</button></a>
+                  <img src="assets/img/sticker-cheese.svg" alt="cheese" class="aboutSticker">
+               </div> 
+               <img src="assets/img/about-img.png" alt="pizza" class="aboutImage">      
+            </div>
          </section>
 
          <!--==================== POPULAR ====================-->
          <section class="popular section" id="popular">
-            
+            <div class="popularContainer container grid">
+               <div class="popularData">
+                  <h2 class="sectionTitle">Discover <br> Popular Orders</h2>
+                  <p class="popularDescription">Select the best prepared and delicious flavors. 
+                     We have collected some popular recipes from around 
+                     the world for you to choose your favorite.</p>
+               </div>
+               
+               <div class="popularSwiper swiper">
+                  <img src="assets/img/popular-dish.png" alt="pizza" class="popularDish">
+                  <div class="swiper-wrapper">
+                     <article class="popularCard swiper-slide">
+                        <img src="assets/img/popular-1.png" alt="popularImage" class="popularImage">
+                        <h3 class="popularTitle">Cheese Pizza</h3>
+                     </article>
+                     <article class="popularCard swiper-slide">
+                        <img src="assets/img/popular-2.png" alt="popularImage" class="popularImage">
+                        <h3 class="popularTitle">Veggie Pizza</h3>
+                     </article>
+                     <article class="popularCard swiper-slide">
+                        <img src="assets/img/popular-3.png" alt="popularImage" class="popularImage">
+                        <h3 class="popularTitle">Pepperoni Pizza</h3>
+                     </article>
+                  </div>
+
+               </div>
+            </div>
          </section>
 
          <!--==================== RECIPE ====================-->
          <section class="recipe section">
-            
+            <div class="recipeContainer container grid">
+               <h2 class="sectionTitle">Fresh And <br> Natural Ingredients</h2>
+
+               <div class="recipeIngredients">
+                  <img src="assets/img/recipe-flour.png" alt="flour" class="recipeImage">
+                  <div>
+                     <h3 class="recipeTitle">Flour</h3>
+                     <p class="recipeDescription">The best wheat from the field for the best flour.</p>
+                  </div>
+               </div>
+               <div class="recipeIngredients">
+                  <img src="assets/img/recipe-cheese.png" alt="flour" class="recipeImage">
+                  <div>
+                     <h3 class="recipeTitle">Cheese</h3>
+                     <p class="recipeDescription">Indulge in cheese for a healthy future.</p>
+                  </div>
+               </div>
+               <div class="recipeIngredients">
+                  <img src="assets/img/recipe-sauces.png" alt="flour" class="recipeImage">
+                  <div>
+                     <h3 class="recipeTitle">Sauces</h3>
+                     <p class="recipeDescription">Add a touch of salsa to your life and it will taste better.</p>
+                  </div>
+               </div>
+               <div class="recipeIngredients">
+                  <img src="assets/img/recipe-tomato.png" alt="flour" class="recipeImage">
+                  <div>
+                     <h3 class="recipeTitle">Vegetables</h3>
+                     <p class="recipeDescription">Vegetables full of the essence of nature and organic.</p>
+                  </div>
+               </div>
+               <div class="recipeIngredients">
+                  <img src="assets/img/recipe-meat.png" alt="flour" class="recipeImage">
+                  <div>
+                     <h3 class="recipeTitle">Meats</h3>
+                     <p class="recipeDescription">The best fresh meats for your health.</p>
+                  </div>
+               </div>
+               <img src="assets/img/recipe-img.png" alt="Pizza" class="recipeImg">
+            </div>
          </section>
 
          <!--==================== PRODUCTS ====================-->
@@ -100,7 +200,7 @@
       <script src=""></script>
       
       <!--=============== SWIPER JS ===============-->
-      <script src=""></script>
+      <script src="assets/js/swiper-bundle.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>

@@ -118,9 +118,9 @@ img {
 }
 
 .section {
-  padding-block: 5rem 1rem;
+  padding-block: 5rem 3rem;
 }
-.section__title {
+.sectionTitle {
   text-align: center;
   font-size: var(--bigger-font-size);
   margin-bottom: 2rem;
@@ -214,29 +214,212 @@ img {
 }
 
 /* Add shadow header */
-
+.headerShadow{
+  box-shadow: 0 8px 24px hsla(0, 6%, 10%, 0.1);
+}
 
 /* Active link */
 
 
 /*=============== HOME ===============*/
-
+.homeContainer{
+  padding-block: 2rem 3rem;
+  row-gap: 7rem;
+}
+.homeContent{
+  position: relative;
+  text-align: center;
+}
+.homeTitle{
+  font-size: var(--biggest-font-size);
+}
+.homeDecription{
+  margin-block: 1rem 2rem;
+}
+.homeSticker1,
+.homeSticker2{
+  width: 40px;
+  position: absolute;
+  opacity: .7;
+}
+.homeSticker1{
+  right: .75rem;
+  bottom: 5rem;
+  rotate: 30deg;
+}
+.homeSticker2{
+  left: 2.5rem;
+  bottom: -4.5rem;
+}
+.homeImage{
+  position: relative;
+  display: grid;
+  justify-items: center;
+  justify-self: center;
+}
+.homeIngredient{
+  width: 60px;
+  position: absolute;
+  filter: var(--shadow-small-img);
+  z-index: 2;
+}
+.homeLeaf1{
+  top: 2rem;
+  left: -.5rem;
+}
+.homeLeaf2{
+  top: 2rem;
+  right: -.5rem;
+}
+.homeOlive{
+  bottom: 2rem;
+  left: -.2rem;
+}
+.homeTomato{
+  bottom: 2rem;
+  right: -.5rem;
+}
+.homePepperoni{
+  bottom: -2rem;
+}
+.homeMushroom{
+  top: -1.5rem;
+}
+.homeBoard,
+.homePizza{
+  filter: var(--shadow-big-img);
+}
+.homePizza{
+  width: 300px;
+  z-index: 2;
+}
+.homeBoard{
+  width: 300px;
+  position: absolute;
+  bottom: -.5rem;
+  left:-.15rem;
+}
 
 /*=============== BUTTON ===============*/
+.button button{
+  display: inline-flex;
+  /* justify-content: center; */
+  padding: 1rem 1.5rem;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  border-radius: 4rem;
+  box-shadow: 0px 8px 24px hsla(353, 100%, 40%, 0.404);
+  transition: background-color .4s;
+}
 
+.button button:hover {
+  background-color: var(--first-color-alt);
+}
 
 /*=============== ABOUT ===============*/
+.about{
+  background-color: var(--container-color);
+}
+.aboutContainer{
+  row-gap: 2rem;
+  padding-bottom: 2rem;
+}
+.aboutData{
+  position: relative;
+  text-align: center;
+}
+.aboutDescription{
+  margin-bottom: 2rem;
+}
+.aboutSticker{
+  width: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 3rem;
+}
+.aboutImage{
+  filter: var(--shadow-big-img);
+}
 
 
 /*=============== POPULAR ===============*/
+.popularContainer{
+  grid-template-columns: 100%;
+  row-gap: 3rem;
+  padding-bottom: 2rem;
+}
+.popularData .sectionTitle{
+  margin-bottom: 1rem;
+}
+.popularDescription{
+  text-align: center;
+}
 
+.popularDish{
+  position: absolute;
+  width: 220px;
+  inset: 0;
+  filter: var(--shadow-big-img);
+  top: -.85rem;
+  margin-inline: auto;
+}
+.popularCard,
+.popularImage{
+  width: 200px;
+  height: 200px;
+}
+.popularImage{
+  margin: auto;
+  filter: var(--shadow-small-img);
+  transform: scale(0.8) rotate(-190deg);
+  transition: transform .4s;
+}
+.popularTitle{
+  font-size: var(--h3-font-size);
+  margin-top: 2rem;
+  
+  text-align: center;
+  color: var(--first-color);
+  opacity: 0;
+  transition: opacity .4s;
+}
 
 /* Swiper class */
-
-
+.swiper{
+  margin-inline: initial;
+  overflow: visible;
+}
+:is(.swiper-slide-active, swiper-slide-duplicate-active) .popularImage{
+  transform: scale(1) rotate(0deg);
+}
+:is(.swiper-slide-active, swiper-slide-duplicate-active) .popularTitle{
+  opacity: 1;
+}
 
 /*=============== RECIPE ===============*/
-
+.recipe{
+  background-color: var(--container-color);
+}
+.recipeContainer{
+  row-gap: 2rem;
+  padding-bottom: 2rem;
+}
+.recipeImage {
+  width: 60px;
+  filter: var(--shadow-big-img);
+}
+.recipeIngredients{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+.recipeImg{
+  width: 320px;
+  filter: var(--shadow-big-img);
+  justify-self: center;
+}
 
 /*=============== PRODUCTS ===============*/
 
