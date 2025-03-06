@@ -422,6 +422,58 @@ img {
 }
 
 /*=============== PRODUCTS ===============*/
+.productsContainer{
+  padding-top: 3.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem 1.5rem;
+}
+.productsCard{
+  position: relative;
+  background-color: var(--container-color);
+  padding: 5rem .75rem 1.25rem .75rem;
+  border-radius: 1.5rem;
+  box-shadow: 0px 8px 24px hsla(353, 100%, 40%, 0.1);
+}
+.productsImg{
+  width: 120px;
+  position: absolute;
+  top: -3.5rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  filter: var(--shadow-small-img);
+  transition: transform .4s;
+}
+.productsTitle{
+  font-size: var(--h3-font-size);
+  margin-bottom: .5rem;
+}
+.productsPrice{
+  font-family: var(--second-font);
+  font-size: var(--h1-font-size);
+  color: var(--first-color);
+  line-height: 120%;
+}
+.buttonShop{
+  position: absolute;
+  bottom: 1.25rem;
+  right: .75rem;
+  padding: 4px;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  display: inline-flex;
+  box-shadow:0px 4px 16px hsla(353, 100%, 40%, 0.1);
+  cursor: pointer;
+  transition: background-color .4s;
+}
+.buttonShop:hover{
+  background-color: var(--first-color-alt);
+}
+.productsCard:hover .productsImg{
+  transform: translateY(-.5rem);
+}
 
 
 /*=============== CONTACT ===============*/
