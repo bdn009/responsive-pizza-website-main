@@ -219,7 +219,9 @@ img {
 }
 
 /* Active link */
-
+.activeLink::after{
+  width: 70%;
+}
 
 /*=============== HOME ===============*/
 .homeContainer{
@@ -312,7 +314,6 @@ img {
   box-shadow: 0px 8px 24px hsla(353, 100%, 40%, 0.404);
   transition: background-color .4s;
 }
-
 .button button:hover {
   background-color: var(--first-color-alt);
 }
@@ -550,20 +551,143 @@ img {
 }
 
 /*=============== FOOTER ===============*/
-
+.footer{
+  padding-block: 4rem 2rem;
+}
+.footerContainer,
+.footerContent{
+  row-gap: 3rem;
+}
+.footerLogo{
+  justify-self: center;
+  font-size: var(--h1-font-size);
+  font-family: var(--second-font);
+  color: var(--first-color);
+}
+.footerTitle{
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+}
+.footerSocial,
+.footerPayment,
+.footerForm{
+  display: flex;
+  column-gap: 1rem;
+}
+.footerSocialLink{
+  font-size: 1.5rem;
+  color: var(--first-color);
+  transition: transform .4s;
+}
+.footerSocialLink:hover{
+  transform: translateY(-.25rem);
+}
+.footerPayment{
+  width: 40px;
+}
+.footerForm{
+  padding: .5rem;
+  background-color: var(--container-color);
+  border-radius: 4rem;
+  box-shadow: 0px 4px 16px hsla(353, 100%, 10%, 0.1);
+}
+.footerForm input{
+  border-radius: 4rem;
+  width: 100%;
+  padding: .75rem;
+  background:transparent;
+}
+.footerPolicy{
+  display: flex;
+  justify-content: center;
+  gap: .75rem;
+}
+.footerPolicy a{
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+.footerCopy{
+  text-align: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+.footerbutton {
+  display: inline-flex;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  border-radius: 4rem;
+  box-shadow: 0px 8px 24px hsla(353, 100%, 40%, 0.404);
+  transition: background-color .4s;
+}
+.footerbutton:hover {
+  background-color: var(--first-color-alt);
+}
 
 /*=============== SCROLL BAR ===============*/
-
+::-webkit-scrollbar{
+  width: .7rem;
+  background-color: hsl(24, 32%, 75%);
+}
+::-webkit-scrollbar-thumb{
+  background-color: hsl(24, 32%, 65%);
+  border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(24, 32%, 55%);
+}
 
 /*=============== SCROLL UP ===============*/
+.scrollUp{
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--container-color);
+  color: var(--text-color);
+  padding: .4rem;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 16px hsla(353, 100%, 40%, 0.1);
+  transition: bottom .4s, transform .4s, background-color .4s;
+}
+.scrollUp:hover{
+  transform: translateY(-.5rem);
+  background-color: var(--first-color);
+  color: var(--white-color);
+}
 
 
 /* Show Scroll Up */
-
+.showScroll{
+  bottom: 3rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-
+@media screen and (max-width:320px){
+  .container{
+    margin-inline: 1rem;
+  }
+  .productsContainer{
+    grid-template-columns: 150px;
+    justify-content: center;
+  }
+  .footerForm{
+    background-color: transparent;
+    box-shadow: none;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 0;
+  }
+  .footerForm input{
+    background-color: var(--container-color);
+    padding: .75rem 1rem;
+    box-shadow: 0px 4px 16px hsla(353, 100%, 8%, 0.1);
+  }
+}
 
 /* For medium devices */
 
