@@ -930,4 +930,7 @@ img {
   .footerContent div:nth-child(1){
     justify-self: start;
   }
+  .scrollUp{
+    right: 3rem;
+  }
 }
