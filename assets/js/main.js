@@ -72,4 +72,24 @@ const scrollActive = () =>{
 window.addEventListener('scroll', scrollActive)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr= ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay:200,
+    // reset: true
+})
+sr.reveal(`.homeContent`)
+sr.reveal(`.homeBoard`, {delay: 400, distance:'100px', origin:'right'})
+sr.reveal(`.homePizza`, {delay: 800, distance:'100px', origin:'bottom', rotate:{z:-90}})
+sr.reveal(`.homeIngredient`,{delay: 1600, interveal: 100})
+sr.reveal(`.aboutData`,{origin:'right'})
+sr.reveal(`.aboutImage`,{origin:'left'})
+sr.reveal(`.popularContainer`,{origin:'top'})
+sr.reveal(`.recipeData`,{origin:'right'})
+sr.reveal(`.recipeImg`,{origin:'left'})
+sr.reveal(`.productsCard`,{origin:'top'})
+sr.reveal(`.contactInfo`,{origin:'right'})
+sr.reveal(`.contactImage`,{origin:'left'})
+sr.reveal(`footer`,{origin:'top'})
 
